@@ -1,0 +1,5 @@
+[Unit]
+Description=Kupo Image for Preview Environment
+
+[Image]
+Image=docker.io/cardanosolutions/kupo:v2.9.0
