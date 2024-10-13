@@ -5,7 +5,7 @@ After=network-online.target
 
 [Pod]
 Network=preview.network
-PodName=partner-chains-preview
+PodName=preview-partner-chains
 PublishPort=5432:5432
 PublishPort=1442:1442
 PublishPort=1337:1337
