@@ -1,0 +1,5 @@
+[Unit]
+Description=Cardano DB-Sync Image for Preview Environment
+
+[Image]
+Image=ghcr.io/intersectmbo/cardano-db-sync:13.5.0.2
