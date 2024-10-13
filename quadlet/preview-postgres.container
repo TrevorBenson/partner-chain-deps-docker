@@ -1,0 +1,21 @@
+[Unit]
+Description=Postgres Container for Cardano DB Sync Preview environment
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+ContainerName=preview-postgres
+EnvironmentFile=/opt/cardano/preview/.env
+HealthCmd=pg_isready -U postgres
+HealthInterval=5s
+HealthTimeout=5s
+HealthRetries=5
+Image=preview-postgres.image
+Pod=preview-partner-chain.pod
+Volume=preview-postgres-data.volume:/var/lib/postgresql/data:rw,z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
