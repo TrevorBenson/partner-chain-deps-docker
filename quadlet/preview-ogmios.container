@@ -1,0 +1,20 @@
+[Unit]
+Description=Ogmios Container for Preview Environment
+Wants=network-online.target
+After=network-online.target preview-pool.service
+
+[Container]
+ContainerName=preview-ogmios
+Environment="DATA_DIR=/data"
+Exec=--node-socket /ipc/node.socket --node-config /opt/cardano/cnode/files/config.json --host 0.0.0.0
+Image=preview-ogmios.image
+Pod=preview-partner-chain.pod
+Volume=preview-sockets.volume:/ipc:rw,z
+Volume=preview-files.volume:/opt/cardano/cnode/files:ro,z
+Volume=preview-ogmios-data.volume:/data:rw,z
+
+[Service]
+Restart=unless-stopped
+
+[Install]
+WantedBy=multi-user.target
