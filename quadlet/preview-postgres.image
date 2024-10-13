@@ -1,0 +1,5 @@
+[Unit]
+Description=Postgres Image for Preview Environment
+
+[Image]
+Image=docker.io/postgres:15.5
