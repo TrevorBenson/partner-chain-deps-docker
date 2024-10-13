@@ -8,8 +8,8 @@ ContainerName=preview-kupo
 Exec=--node-socket /ipc/node.socket --node-config /opt/cardano/cnode/files/config.json --host 0.0.0.0 --workdir /db --match '*' --since 54412148.656e903c510441032ad566d26fecf7be98882bdefde6a1ed961cd8e7bfa9d18a
 Image=preview-kupo.image
 Pod=preview-partner-chain.pod
-Volume=preview-ccio-sockets.volume:/ipc:rw,z
-Volume=preview-ccio-files.volume:/opt/cardano/cnode/files:ro,z
+Volume=preview-sockets.volume:/ipc:rw,z
+Volume=preview-files.volume:/opt/cardano/cnode/files:ro,z
 Volume=preview-kupo-data.volume:/db:rw,z
 
 [Service]
