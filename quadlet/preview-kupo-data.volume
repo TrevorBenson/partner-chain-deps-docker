@@ -1,0 +1,6 @@
+[Unit]
+Description=Kupo Data Volume
+
+[Volume]
+Label=app=preview-kupo
+VolumeName=kupo-data
