@@ -4,7 +4,7 @@ Wants=network-online.target
 After=network-online.target
 
 [Pod]
-Network=preview.network
+Network=preview-cardano.network
 PodName=preview-partner-chains
 PublishPort=5432:5432
 PublishPort=1442:1442
