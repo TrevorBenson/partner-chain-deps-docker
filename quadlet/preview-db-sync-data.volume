@@ -1,0 +1,6 @@
+[Unit]
+Description=DB-Sync Data Volume
+
+[Volume]
+Label=app=preview-db-sync
+VolumeName=db-sync-data
