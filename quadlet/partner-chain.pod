@@ -1,0 +1,11 @@
+[Unit]
+Description=Partner Chains Pod for Preview Network
+Wants=network-online.target
+After=network-online.target
+
+[Pod]
+Network=preview.network
+PodName=partner-chains-preview
+PublishPort=5432:5432
+PublishPort=1442:1442
+PublishPort=1337:1337
