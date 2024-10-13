@@ -1,0 +1,5 @@
+[Unit]
+Description=Ogmios Image for Preview Environment
+
+[Image]
+Image=docker.io/cardanosolutions/ogmios:v6.5.0
