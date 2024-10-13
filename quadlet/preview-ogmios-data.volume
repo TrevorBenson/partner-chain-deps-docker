@@ -1,0 +1,6 @@
+[Unit]
+Description=Ogmios Data Volume
+
+[Volume]
+Label=app=preview-ogmios
+VolumeName=ogmios-data
