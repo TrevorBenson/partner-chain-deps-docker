@@ -8,7 +8,7 @@ ContainerName=preview-db-sync
 EnvironmentFile=/opt/cardano/preview/.env
 Image=preview-db-sync.image
 Pod=preview-partner-chain.pod
-Volume=preview-ccio-sockets.volume:/node-ipc:rw,z
+Volume=preview-sockets.volume:/node-ipc:rw,z
 Volume=preview-db-sync-data.volume:/var/lib:rw,z
 
 [Service]
