@@ -1,7 +1,7 @@
 [Unit]
 Description=DB Sync Container for Preview environment
 Wants=network-online.target
-After=network-online.target preview-postgres.service preview-pool.container
+After=network-online.target preview-postgres.service preview-pool.service
 
 [Container]
 ContainerName=preview-db-sync
